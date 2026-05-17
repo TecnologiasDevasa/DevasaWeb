@@ -1,0 +1,190 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Tecnologias Devasa">
+    <main class="bg-gray-950 text-white font-sans antialiased">
+        
+        <header class="relative aurora min-h-[80vh] flex items-center justify-center px-8 overflow-hidden border-b border-gray-900">
+            <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+            
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 z-10 relative py-12">
+                <div class="flex-1 text-center md:text-left">
+                    <span class="text-blue-500 font-semibold tracking-wider uppercase text-sm bg-blue-950/50 px-3 py-1 rounded-full border border-blue-900/50">Tecnología con Sentido</span>
+                    <h1 class="text-5xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400">
+                        Un sueño, <br class="hidden md:block"/>una realidad
+                    </h1>
+                    <p class="text-lg text-gray-400 max-w-xl mb-8">
+                        Conoce la historia detrás de Devasa y cómo transformamos la complejidad digital en cercanía para tu negocio.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <a href="#historia" class="bg-white text-gray-950 font-medium px-6 py-3 rounded-xl hover:bg-gray-200 transition-colors shadow-lg shadow-white/5">
+                            Nuestra Historia
+                        </a>
+                        <a href="#experiencia" class="bg-gray-900 text-gray-300 border border-gray-800 font-medium px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors">
+                            Ver Proyectos
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="flex-1 w-full max-w-md md:max-w-none aspect-video md:aspect-square bg-gradient-to-br from-blue-600/10 to-purple-600/10 border border-gray-800 rounded-3xl flex items-center justify-center p-8 backdrop-blur-sm relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+                    <div class="text-center space-y-2">
+                        <div class="text-4xl font-bold text-blue-500">&lt;DEVASA /&gt;</div>
+                        <p class="text-xs text-gray-500 tracking-widest uppercase">Construyendo Futuro</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section id="historia" class="py-24 px-8 border-b border-gray-900">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+                <div class="flex-1 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="h-px w-8 bg-blue-500"></div>
+                        <span class="text-blue-500 font-medium tracking-wider uppercase text-xs">Trayectoria</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Nuestra Historia</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Devasa nace de una convicción simple: <strong class="text-white font-semibold">CREAR</strong>.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Antes de escribir la primera línea de código, su fundador construía hogares, entendiendo de primera mano que detrás de cada estructura hay personas y familias que confían en un resultado sólido.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Ese mismo principio rige hoy cada una de nuestras soluciones tecnológicas:
+                    </p>
+                    <ul class="list-disc pl-6 text-gray-400 space-y-3">
+                        <li>
+                            <span>Detrás de cada negocio hay personas; la tecnología bien aplicada transforma vidas.</span>
+                        </li>
+                        <li>
+                            <span>La brecha digital no es un problema técnico, es un problema de cercanía. Devasa existe para cerrarla.</span>
+                        </li>
+                    </ul>
+                    <p class="text-gray-400 pt-4 font-medium border-t border-gray-900 italic">
+                        "El tiempo es lo más valioso que tienes. Devasa existe para devolvértelo."
+                    </p>
+                </div>
+                
+                <div class="flex-1 w-full max-w-md md:max-w-none">
+                    <div class="relative group rounded-2xl overflow-hidden border border-gray-800 bg-gray-900 aspect-[4/3]">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/quiensoy.jpg" alt="Fundador de Devasa">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-60"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-black px-8 border-b border-gray-900">
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="inline-flex items-center gap-3 mb-4">
+                    <span class="text-purple-500 font-medium tracking-wider uppercase text-xs">Dirección y Enfoque</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-16">Nuestro Propósito</h2>
+                
+                <div class="flex flex-col sm:flex-row gap-8 justify-center items-center">
+                    <div class="flip-card w-72 h-96 cursor-pointer group">
+                        <div class="flip-card-inner w-full h-full transition-transform duration-700 transform-style-3d group-hover:rotate-y-180">
+                            <div class="flip-card-front rounded-2xl overflow-hidden border border-gray-800 bg-gray-900">
+                                <img src="/mision.jpg" class="w-full h-full object-cover opacity-80" alt="Misión de la empresa" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 to-transparent flex items-end p-6 justify-center">
+                                    <h3 class="text-xl font-bold tracking-wide">Misión</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back bg-blue-950/40 border border-blue-900/50 backdrop-blur-md rounded-2xl flex flex-col items-center justify-center p-8 text-center rotate-y-180 absolute inset-0 backface-hidden">
+                                <h3 class="text-2xl font-bold mb-4 text-blue-400">Misión</h3>
+                                <p class="text-gray-300 text-sm leading-relaxed">Acercar la tecnología a emprendedores y PYMES de Chile, simplificando y automatizando sus procesos para que puedan dedicar su tiempo a lo que realmente importa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card w-72 h-96 cursor-pointer group">
+                        <div class="flip-card-inner w-full h-full transition-transform duration-700 transform-style-3d group-hover:rotate-y-180">
+                            <div class="flip-card-front rounded-2xl overflow-hidden border border-gray-800 bg-gray-900">
+                                <img src="/vision.jpg" class="w-full h-full object-cover opacity-80" alt="Visión de la empresa" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 to-transparent flex items-end p-6 justify-center">
+                                    <h3 class="text-xl font-bold tracking-wide">Visión</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back bg-purple-950/40 border border-purple-900/50 backdrop-blur-md rounded-2xl flex flex-col items-center justify-center p-8 text-center rotate-y-180 absolute inset-0 backface-hidden">
+                                <h3 class="text-2xl font-bold mb-4 text-purple-400">Visión</h3>
+                                <p class="text-gray-300 text-sm leading-relaxed">Ser el referente tecnológico de confianza tanto para el emprendedor que da sus primeros pasos digitales como para la empresa que necesita soluciones a medida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="py-24 bg-gray-950 px-8">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="text-blue-500 font-medium tracking-wider uppercase text-xs">Casos de Éxito</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2">Experiencia Desarrollada</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+
+                    <div class="project-card relative w-full max-w-[320px] h-64 rounded-2xl border border-gray-800 bg-black overflow-hidden cursor-pointer group">
+                        <div class="absolute inset-0 w-full h-full p-6 flex items-center justify-center bg-zinc-950 transition-transform duration-500 group-hover:scale-105">
+                            <img src="/toolwork.jpg" class="max-w-full max-h-[70%] object-contain rounded-lg" alt="Logo Toolwork" />
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/70 to-transparent p-6 flex flex-col justify-end">
+                            <h3 class="text-xl font-bold text-white">Toolwork</h3>
+                            <div class="project-info mt-2 overflow-hidden transition-all duration-300">
+                                <p class="text-gray-400 text-xs leading-relaxed">Desarrollo de CRM de gestión integrando módulos de clientes, seguimiento y reportería.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card relative w-full max-w-[320px] h-64 rounded-2xl border border-gray-800 bg-black overflow-hidden cursor-pointer group">
+                        <div class="absolute inset-0 w-full h-full p-6 flex items-center justify-center bg-zinc-950 transition-transform duration-500 group-hover:scale-105">
+                            <img src="/rims.jpg" class="max-w-full max-h-[70%] object-contain rounded-lg" alt="Logo RIMS" />
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/70 to-transparent p-6 flex flex-col justify-end">
+                            <h3 class="text-xl font-bold text-white">RIMS</h3>
+                            <div class="project-info mt-2 overflow-hidden transition-all duration-300">
+                                <p class="text-gray-400 text-xs leading-relaxed">Sistema integrado de gestión desarrollado sobre la plataforma Toolwork.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card relative w-full max-w-[320px] h-64 rounded-2xl border border-gray-800 bg-black overflow-hidden cursor-pointer group">
+                        <div class="absolute inset-0 w-full h-full p-6 flex items-center justify-center bg-zinc-950 transition-transform duration-500 group-hover:scale-105">
+                            <img src="/dsyd.jpg" class="max-w-full max-h-[70%] object-contain rounded-lg" alt="Logo DSYD" />
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/70 to-transparent p-6 flex flex-col justify-end">
+                            <h3 class="text-xl font-bold text-white">DSYD Ingeniería</h3>
+                            <div class="project-info mt-2 overflow-hidden transition-all duration-300">
+                                <p class="text-gray-400 text-xs leading-relaxed">Desarrollo de sistema de gestión interno optimizando procesos administrativos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
+
+<style>
+    /* Estilos utilitarios CSS necesarios para el Flip-Card 3D y Backface visibility */
+    .flip-card {
+        perspective: 1000px;
+    }
+    .flip-card-inner {
+        position: relative;
+        transform-style: preserve-3d;
+    }
+    .rotate-y-180 {
+        transform: rotateY(180deg);
+    }
+    .backface-hidden {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+    .transform-style-3d {
+        transform-style: preserve-3d;
+    }
+</style>

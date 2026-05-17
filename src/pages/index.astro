@@ -1,0 +1,125 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Sparkles, HeartHandshake, HandFist, Boxes } from 'lucide-astro';
+---
+<Layout title="Tecnologias Devasa">
+	<main class="bg-gray-950 text-white">
+		<header class="flex flex-col items-center justify-center min-h-[560px] text-center relative overflow-hidden">
+			<div id="tsparticles" class="absolute inset-0 z-0"></div>
+			<span class="z-10 relative text-blue-500 font-semibold tracking-wider uppercase text-sm bg-blue-950/50 px-3 py-1 rounded-full border border-blue-900/50 mb-6">Soluciones Tecnológicas</span>
+			<h1 class="text-5xl md:text-6xl font-extrabold mb-6 z-10 relative leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400">Tecnología al alcance <br class="hidden md:block"/> de tus manos</h1>
+			<p class="text-lg text-gray-400 max-w-xl mb-10 z-10 relative">Ayudamos a emprendedores y pymes a dar el salto digital. Desde la asesoría hasta la solución, estamos contigo en cada paso.</p>
+			<div class="flex gap-4 z-10">
+				<a href="/servicios" class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-500 transition-colors font-medium">Conoce nuestros servicios</a>
+				<a href="/contacto" class="border border-white text-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition-colors font-medium">Contáctanos</a>
+			</div>
+		</header>
+		<section class="overflow-hidden bg-black min-h-[90px] flex items-center py-4">
+			<div class="flex animate-marquee text-xl whitespace-nowrap gap-8 text-white font-bold">
+				<span>Asesorías</span>
+				<span>☼</span>
+				<span>Soluciones</span>
+				<span>☼</span>
+				<span>Tecnología</span>
+				<span>☼</span>
+				<span>Pymes</span>
+				<span>☼</span>
+				<span>Transformación Digital</span>
+				<span>☼</span>
+				<span>CRM</span>
+				<span>☼</span>
+			</div>
+		</section>
+		<section class="py-20 bg-gray-950 text-white text-center">
+			<div class="flex items-center justify-center gap-3 mb-4">
+				<div class="h-px w-8 bg-blue-500"></div>
+				<span class="text-blue-500 text-xs uppercase tracking-wider">Lo que nos define</span>
+				<div class="h-px w-8 bg-blue-500"></div>
+			</div>
+			<h2 class="text-3xl md:text-4xl font-bold mb-12">Nuestros Valores</h2>
+			<div class="flex gap-6 justify-center flex-wrap">
+				<div class="bg-black p-8 rounded-2xl max-w-xs hover:bg-blue-950 transition duration-300 border border-gray-800">
+					<Sparkles class="mx-auto" size={48} />
+					<h3 class="text-xl font-bold mt-4 mb-2">Innovación</h3>
+					<p class="text-gray-400">La transformación digital es parte del siglo XXI, hacer oídos sordos a este avance es rechazar el desarrollo.</p>
+				</div>
+				<div class="bg-black p-8 rounded-2xl max-w-xs hover:bg-blue-950 transition duration-300 border border-gray-800">
+					<HeartHandshake class="mx-auto" size={48}/>
+					<h3 class="text-xl font-bold mt-4 mb-2">Empatía</h3>
+					<p class="text-gray-400">Todos debemos tener el mismo acceso a la tecnología por igual, por ende el acercamiento al desarrollo es clave.</p>
+				</div>
+				<div class="bg-black p-8 rounded-2xl max-w-xs hover:bg-blue-950 transition duration-300 border border-gray-800">
+					<HandFist class="mx-auto" size={48}/>
+					<h3 class="text-xl font-bold mt-4 mb-2">Compromiso</h3>
+					<p class="text-gray-400">Cada proyecto es un desafío que asumimos como propio, trabajando con dedicación hasta cumplir los objetivos de nuestros clientes.</p>
+				</div>
+				<div class="bg-black p-8 rounded-2xl max-w-xs hover:bg-blue-950 transition duration-300 border border-gray-800">
+					<Boxes class="mx-auto" size={48}/>
+					<h3 class="text-xl font-bold mt-4 mb-2">Fórmula CTC</h3>
+					<p class="text-gray-400">La <strong>comunicación</strong> es clave para entender el compromiso y dentro de ello es la <strong>transparencia</strong> con el cliente, la <strong>claridad</strong> de nutrir de conocimientos a nuestros socios es importante.</p>
+				</div>
+			</div>
+		</section>
+		<section class="bg-black py-20 text-white px-8">
+			<div class="flex items-center justify-center gap-3 mb-4">
+				<div class="h-px w-8 bg-blue-500"></div>
+				<span class="text-blue-500 text-xs uppercase tracking-wider">Lo que hacemos</span>
+				<div class="h-px w-8 bg-blue-500"></div>
+			</div>
+			<h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestros Servicios</h2>
+			<div class="max-w-3xl mx-auto flex flex-col gap-4">
+				<details class="bg-gray-900 rounded-xl px-6 py-4 cursor-pointer hover:bg-blue-950 transition duration-300 border border-gray-800">
+					<summary class="font-bold text-lg list-none">Desarrollo de Software a medida</summary>
+					<p class="text-gray-400 mt-4">Creamos soluciones digitales adaptadas a las necesidades reales de tu negocio, desde sistemas de gestión hasta aplicaciones móviles.</p>
+				</details>
+				<details class="bg-gray-900 rounded-xl px-6 py-4 cursor-pointer hover:bg-blue-950 transition duration-300 border border-gray-800">
+					<summary class="font-bold text-lg list-none">Asesoría Tecnológica</summary>
+					<p class="text-gray-400 mt-4">Te acompañamos en tu transformación digital, identificando las herramientas correctas para tu empresa o emprendimiento.</p>
+				</details>
+				<details class="bg-gray-900 rounded-xl px-6 py-4 cursor-pointer hover:bg-blue-950 transition duration-300 border border-gray-800">
+					<summary class="font-bold text-lg list-none">Análisis y Levantamiento de Procesos</summary>
+					<p class="text-gray-400 mt-4">Antes de desarrollar, entendemos cómo funciona tu negocio. Analizamos tus procesos para construir soluciones que realmente se adapten a tu realidad.</p>
+				</details>
+			</div>
+		</section>
+		<section class="overflow-hidden bg-gray-950 min-h-[90px] flex items-center py-4">
+			<div class="flex animate-marquee text-xl whitespace-nowrap gap-20 text-white font-bold">
+				<img class="h-12 w-auto" src="/devasanegrosinfondo.PNG">
+				<img class="h-12 w-auto" src="/devasablancosinfondo.PNG">
+				<img class="h-12 w-auto" src="/devasanegrosinfondo.PNG">
+				<img class="h-12 w-auto" src="/devasablancosinfondo.PNG">
+				<img class="h-12 w-auto" src="/devasanegrosinfondo.PNG">
+				<img class="h-12 w-auto" src="/devasablancosinfondo.PNG">
+				<img class="h-12 w-auto" src="/devasanegrosinfondo.PNG">
+				<img class="h-12 w-auto" src="/devasablancosinfondo.PNG">
+			</div>
+		</section>
+	</main>
+	<script>
+		import { tsParticles } from "@tsparticles/engine";
+		import { loadSlim } from "@tsparticles/slim";
+		await loadSlim(tsParticles);
+		await tsParticles.load({
+			id: "tsparticles",
+			options: {
+				background: { color: { value: "transparent" } },
+				particles: {
+					number: { value: 500 },
+					color: { value: "#132DD4" },
+					links: {
+						enable: true,
+						color: "#ffffff",
+						opacity: .09,
+					},
+					move: { enable: true, speed: 0.5 },
+					opacity: { value: 3 },
+					size: { value: 1 },
+				},
+			},
+		})
+		const marquees = document.querySelectorAll('.animate-marquee');
+		marquees.forEach(marquee => {
+			marquee.innerHTML += marquee.innerHTML;
+		});
+	</script>
+</Layout>

@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Code, Brain, GitMerge } from 'lucide-astro';
+---
+
+<Layout title="Servicios | Tecnologias Devasa">
+    <main class="bg-gray-950 text-white font-sans antialiased">
+        
+        <header class="relative aurora min-h-[60vh] flex flex-col items-center justify-center px-8 overflow-hidden border-b border-gray-900 text-center">
+            <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+            <span class="z-10 relative text-blue-500 font-semibold tracking-wider uppercase text-sm bg-blue-950/50 px-3 py-1 rounded-full border border-blue-900/50 mb-6">Nuestras Soluciones</span>
+            <h1 class="z-10 relative text-5xl md:text-6xl font-extrabold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400">Lo que construimos <br class="hidden md:block"/> para ti</h1>
+            <p class="z-10 relative text-lg text-gray-400 max-w-2xl">Desde el análisis de tu negocio hasta la solución implementada, cada servicio está diseñado para transformar tu realidad digital.</p>
+        </header>
+
+        <!-- SECCION DE LA TRIADA -->
+        <section class="relative py-24 px-8 bg-gray-950 overflow-hidden">
+            <div class="relative max-w-3xl mx-auto h-[560px] flex items-center justify-center">
+                <svg class="absolute inset-0 w-full h-full z-0" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="50%" y1="15%" x2="18%" y2="78%" stroke="#132DD4" stroke-width="1" stroke-dasharray="6 4" opacity="0.4">
+                        <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="2s" repeatCount="indefinite"/>
+                    </line>
+                    <line x1="50%" y1="15%" x2="82%" y2="78%" stroke="#7c3aed" stroke-width="1" stroke-dasharray="6 4" opacity="0.4">
+                        <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="2s" repeatCount="indefinite"/>
+                    </line>
+                    <line x1="18%" y1="78%" x2="82%" y2="78%" stroke="#132DD4" stroke-width="1" stroke-dasharray="6 4" opacity="0.4">
+                        <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="2s" repeatCount="indefinite"/>
+                    </line>
+                </svg>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                    <div class="relative flex items-center justify-center">
+                        <div class="absolute w-24 h-24 rounded-full bg-blue-600/10 animate-ping"></div>
+                        <div class="absolute w-16 h-16 rounded-full bg-blue-600/20 animate-pulse"></div>
+                        <img src="/devasanegrosinfondo.PNG" class="h-16 w-auto relative z-10 opacity-90" />
+                    </div>
+                </div>
+                <div class="absolute top-[-5%] left-1/2 -translate-x-1/2 bg-black border border-gray-800 hover:border-blue-600 transition duration-500 hover:bg-blue-950/30 rounded-2xl p-6 max-w-[220px] text-center group">
+                    <Code class="mx-auto mb-3 text-blue-500 group-hover:text-blue-400 transition" size={32} />
+                    <h3 class="font-bold text-lg mb-1">Desarrollo de Software</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Soluciones digitales a medida para tu negocio.</p>
+                </div>
+
+                <div class="absolute bottom-[5%] left-[2%] bg-black border border-gray-800 hover:border-purple-600 transition duration-500 hover:bg-purple-950/30 rounded-2xl p-6 max-w-[220px] text-center group">
+                    <Brain class="mx-auto mb-3 text-purple-500 group-hover:text-purple-400 transition" size={32} />
+                    <h3 class="font-bold text-lg mb-1">Asesoría Tecnológica</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Te acompañamos en tu transformación digital.</p>
+                </div>
+
+                <div class="absolute bottom-[5%] right-[2%] bg-black border border-gray-800 hover:border-blue-600 transition duration-500 hover:bg-blue-950/30 rounded-2xl p-6 max-w-[220px] text-center group">
+                    <GitMerge class="mx-auto mb-3 text-blue-500 group-hover:text-blue-400 transition" size={32} />
+                    <h3 class="font-bold text-lg mb-1">Análisis de Procesos</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Entendemos tu negocio antes de desarrollar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION DEL DETALLE DEL SERVICIO -->
+        <section class="py-24 px-8 bg-black border-t border-gray-900">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+                <div class="flex-1 bg-gray-900 rounded-2xl aspect-video flex items-center justify-center border border-gray-800">
+                    <Code class="text-blue-500" size={80} />
+                </div>
+                <div class="flex-1 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="h-px w-8 bg-blue-500"></div>
+                        <span class="text-blue-500 text-xs uppercase tracking-wider">Servicio 01</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold">Desarrollo de Software a medida</h2>
+                    <p class="text-gray-400 leading-relaxed">Creamos soluciones digitales adaptadas a las necesidades reales de tu negocio. Desde sistemas de gestión hasta aplicaciones móviles, cada linea de codigo tiene un proposito claro.</p>
+                    <a href="/contacto" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-500 transition-colors font-medium">Conversemos</a>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 px-8 bg-gray-950 border-t border-gray-900">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row-reverse gap-16 items-center">
+                <div class="flex-1 bg-gray-900 rounded-2xl aspect-video flex items-center justify-center border border-gray-800">
+                    <Brain class="text-purple-500" size={80} />
+                </div>
+                <div class="flex-1 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="h-px w-8 bg-purple-500"></div>
+                        <span class="text-purple-500 text-xs uppercase tracking-wider">Servicio 02</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold">Asesoría Tecnológica</h2>
+                    <p class="text-gray-400 leading-relaxed">Te acompañamos en tu transformación digital, identificando las herramientas correctas para tu empresa o emprendimiento. No vendemos tecnología, entendemos tu realidad y te guiamos hacia la solución correcta.</p>
+                    <a href="/contacto" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-xl hover:bg-purple-500 transition-colors font-medium">Conversemos</a>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 px-8 bg-black border-t border-gray-900">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+                <div class="flex-1 bg-gray-900 rounded-2xl aspect-video flex items-center justify-center border border-gray-800">
+                    <GitMerge class="text-blue-500" size={80} />
+                </div>
+                <div class="flex-1 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="h-px w-8 bg-blue-500"></div>
+                        <span class="text-blue-500 text-xs uppercase tracking-wider">Servicio 03</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold">Análisis y Levantamiento de Procesos</h2>
+                    <p class="text-gray-400 leading-relaxed">Antes de desarrollar, entendemos como funciona tu negocio. Analizamos tus procesos, identificamos cuellos de botella y construimos soluciones que realmente se adapten a tu realidad. El ETL no es solo tecnico, es estrategico.</p>
+                    <a href="/contacto" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-500 transition-colors font-medium">Conversemos</a>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 px-8 bg-gray-950 border-t border-gray-900 text-center">
+            <div class="max-w-2xl mx-auto space-y-6">
+                <div class="flex items-center justify-center gap-3">
+                    <div class="h-px w-8 bg-blue-500"></div>
+                    <span class="text-blue-500 text-xs uppercase tracking-wider">Siguiente paso</span>
+                    <div class="h-px w-8 bg-blue-500"></div>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold">Listo para dar el salto digital?</h2>
+                <p class="text-gray-400 text-lg">Cuéntanos tu desafío y construimos la solución juntos.</p>
+                <a href="/contacto" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-500 transition-colors font-medium text-lg">Contáctanos</a>
+            </div>
+        </section>
+    </main>
+</Layout>
