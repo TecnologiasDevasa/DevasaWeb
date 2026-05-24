@@ -98,16 +98,21 @@ import { Sparkles, HeartHandshake, HandFist, Boxes } from 'lucide-astro';
 	<script>
 		import { tsParticles } from "@tsparticles/engine";
 		import { loadSlim } from "@tsparticles/slim";
+
+		// DETECTAR DISPOSITIVO SEGUN ANCHO DE PANTALLA
+		const isMobile = window.innerWidth < 768;
+
 		await loadSlim(tsParticles);
 		await tsParticles.load({
 			id: "tsparticles",
 			options: {
+				fpsLimit: 60,
 				background: { color: { value: "transparent" } },
 				particles: {
-					number: { value: 500 },
+					number: { value: isMobile ? 40 : 150 },
 					color: { value: "#132DD4" },
 					links: {
-						enable: true,
+						enable: !isMobile,
 						color: "#ffffff",
 						opacity: .09,
 					},
@@ -116,7 +121,8 @@ import { Sparkles, HeartHandshake, HandFist, Boxes } from 'lucide-astro';
 					size: { value: 1 },
 				},
 			},
-		})
+		});
+
 		const marquees = document.querySelectorAll('.animate-marquee');
 		marquees.forEach(marquee => {
 			marquee.innerHTML += marquee.innerHTML;
