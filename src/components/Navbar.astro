@@ -1,10 +1,36 @@
-<nav class="bg-black px-8 py-4 flex justify-between items-center relative z-10">
+<nav class="bg-black px-8 py-4 flex justify-between items-center relative z-50">
     <img class="h-12 w-auto" src="/devasanegrosinfondo.PNG">
-    <ul class="mx-auto text-white flex list-none gap-8">
+
+    <!-- MENU VISIBLE SOLO EN DESKTOP -->
+    <ul class="hidden md:flex mx-auto text-white list-none gap-8">
         <li><a class="hover:text-blue-400" href="/">Inicio</a></li>
         <li><a class="hover:text-blue-400" href="/nosotros">Nosotros</a></li>
         <li><a class="hover:text-blue-400" href="/servicios">Servicios</a></li>
         <li><a class="hover:text-blue-400" href="/contacto">Contacto</a></li>
     </ul>
-    <div class="h-12 w-35"></div>
+
+    <!-- BOTON HAMBURGUESA VISIBLE SOLO EN MOVIL -->
+    <button id="hamburger" class="md:hidden flex flex-col gap-1.5" aria-label="Abrir menu">
+        <span class="w-6 h-0.5 bg-white block"></span>
+        <span class="w-6 h-0.5 bg-white block"></span>
+        <span class="w-6 h-0.5 bg-white block"></span>
+    </button>
 </nav>
+
+<!-- MENU DESPLEGABLE MOVIL -->
+<div id="mobile-menu" class="hidden bg-black border-t border-gray-800 px-8 py-6 relative z-50">
+    <ul class="text-white flex flex-col gap-5 list-none">
+        <li><a class="hover:text-blue-400 block" href="/">Inicio</a></li>
+        <li><a class="hover:text-blue-400 block" href="/nosotros">Nosotros</a></li>
+        <li><a class="hover:text-blue-400 block" href="/servicios">Servicios</a></li>
+        <li><a class="hover:text-blue-400 block" href="/contacto">Contacto</a></li>
+    </ul>
+</div>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
