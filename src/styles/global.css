@@ -82,3 +82,27 @@
     --y: 50%;
     background: radial-gradient( circle at var(--x) var(--y), #132DD4, transparent 70% );
 }
+
+.service-card {
+    position: relative;
+    background: #0a0a0a;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.service-card:hover {
+    box-shadow: 0 0 40px -8px var(--color-primary);
+}
