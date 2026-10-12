@@ -98,7 +98,6 @@ import { Sparkles, HeartHandshake, HandFist, Boxes } from 'lucide-astro';
 	<script>
 		import { tsParticles } from "@tsparticles/engine";
 		import { loadSlim } from "@tsparticles/slim";
-
 		// DETECTAR DISPOSITIVO SEGUN ANCHO DE PANTALLA
 		const isMobile = window.innerWidth < 768;
 
@@ -109,8 +108,8 @@ import { Sparkles, HeartHandshake, HandFist, Boxes } from 'lucide-astro';
 				fpsLimit: 60,
 				background: { color: { value: "transparent" } },
 				particles: {
-					number: { value: isMobile ? 150 : 700 },
-					color: { value: "#132DD4" },
+					number: { value: isMobile ? 150 : 400 },
+					color: { value: "#1DBF73" },
 					links: {
 						enable: true,
 						color: "#ffffff",
@@ -122,8 +121,25 @@ import { Sparkles, HeartHandshake, HandFist, Boxes } from 'lucide-astro';
 				},
 				fullScreen: {
 					enable: false,
-				}
-				
+				},
+				interactivity: {
+					detectsOn: "window",
+					events: {
+						onHover: {
+							enable: true,
+							mode: "grab",
+						},
+					},
+					modes: {
+						grab: {
+							distance: 160,
+							links: {
+								opacity: .5,
+								color: "#1DBF73",
+							},
+						},
+					},
+				},
 			},
 		});
 
