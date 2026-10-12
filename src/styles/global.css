@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #132DD4;
-  --color-secondary: #7c3aed;
+  --color-primary: #1DBF73;
+  --color-secondary: #08321e;
 }
 
 @keyframes marquee {
@@ -78,9 +78,9 @@
 }
 
 .value-card {
-    --x: 50%;
-    --y: 50%;
-    background: radial-gradient( circle at var(--x) var(--y), #132DD4, transparent 70% );
+	--x: 50%;
+	--y: 50%;
+	background: radial-gradient( circle at var(--x) var(--y), var(--color-secondary), transparent 70% );
 }
 
 .service-card {
